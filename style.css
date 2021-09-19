@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 .hg-conteudo {
     background-color: silver;
 }
 
 .hg-conteudo > main {
-    background-color: #aaa;
+    background-image: url(https://s5.static.brasilescola.uol.com.br/img/2018/09/hitler-mussolini.jpg);
+    background-size: cover;
+    flex: 1;
 }
 
 body {
@@ -12,6 +16,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-flow: column;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .hg-conteudo {
@@ -24,10 +29,6 @@ body {
     order: -1;
 }
 
-.hg-conteudo > main {
-    flex: 1;
-}
-
 @media (min-width: 768px) {
     .hg-conteudo {
         flex-flow: row;
@@ -37,4 +38,25 @@ body {
     .hg-conteudo > nav {
         flex: 0 0 200px;
     }
+}
+
+header{
+    background-color: rgb(175, 137, 67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: 'Gluten', cursive;
+}
+
+#primeiraPag{
+    border: 3px solid rgb(29, 37, 28);
+    background-color: rgb(233, 233, 233);
+    padding: 20px;
+    font-size: larger;
+}
+
+span{
+    font-weight: bold;
 }
